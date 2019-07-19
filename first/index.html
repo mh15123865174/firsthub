@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<link rel="stylesheet" type="text/css" href="../frame/css/aui.css" />
+		<script src="../frame/script/aui-tab.js" type="text/javascript" charset="utf-8"></script>
+		<header class="aui-bar aui-bar-nav">顶部导航栏</header>
+		<header class="aui-bar aui-bar-nav" style="padding-top:25px;">
+			<a class="aui-pull-left">
+				<span class="aui-iconfont aui-icon-left"></span>
+			</a>
+			<div class="aui-title">fixStatusBar效果</div>
+		</header>
+		<header class="aui-bar aui-bar-nav">
+			<a class="aui-pull-left aui-btn">
+				<span class="aui-iconfont aui-icon-left"></span>
+			</a>
+			<div class="aui-title">Title</div>
+		</header>
+		<header class="aui-bar aui-bar-nav aui-bar-light">
+			<a class="aui-pull-left aui-btn">
+				<span class="aui-iconfont aui-icon-left"></span>
+			</a>
+			<div class="aui-title">Title</div>
+		</header>
+		<header class="aui-bar aui-bar-nav aui-bar-light">
+			<a class="aui-pull-left aui-btn">
+				<span class="aui-iconfont aui-icon-left"></span>
+			</a>
+			<div class="aui-title">Title</div>
+			<a class="aui-pull-right aui-btn aui-btn-outlined">
+				<span class="aui-iconfont aui-icon-search"></span>
+			</a>
+		</header>
+		<header class="aui-bar aui-bar-nav">
+			<a class="aui-pull-left aui-btn">
+				<span class="aui-iconfont aui-icon-left"></span>返回
+			</a>
+			<div class="aui-title">Title</div>
+		</header>
+		<header class="aui-bar aui-bar-nav">
+			<a class="aui-pull-left aui-btn aui-btn-outlined">
+				<span class="aui-iconfont aui-icon-menu"></span>
+			</a>
+			<div class="aui-title">Title</div>
+			<a class="aui-pull-right aui-btn aui-btn-outlined">
+				<span class="aui-iconfont aui-icon-search"></span>
+			</a>
+		</header>
+	</head>
+	<body>
+		<div class="aui-content">
+			<div class="aui-list">
+				
+			</div>
+			<div class="aui-row">
+				
+			</div>
+			<div class="aui-bar">
+				
+			</div>
+			<div class="aui-grid">
+				<p><div class="aui-btn aui-text-success " >默认按钮(default)</div></p>
+				<div class="aui-bar aui-bar-btn aui-bar-btn-full">
+					<div class="aui-bar-btn-item aui-active">Item</div>
+					<div class="aui-bar-btn-item">Item</div>
+					<div class="aui-bar-btn-item">Item</div>
+				</div>
+				<div class="aui-bar aui-bar-btn aui-bar-btn-sm aui-bar-btn-full">
+					<div class="aui-bar-btn-item aui-active">Item</div>
+					<div class="aui-bar-btn-item">Item</div>
+					<div class="aui-bar-btn-item">Item</div>
+				</div>
+				<div class="aui-bar aui-bar-btn" style="width:80%;">
+					<div class="aui-bar-btn-item aui-active">Item</div>
+					<div class="aui-bar-btn-item">Item</div>
+					<div class="aui-bar-btn-item">Item</div>
+				</div>
+				<div class="aui-bar aui-bar-btn" style="width:80%;" type="count" id="demo">
+					<div class="aui-bar-btn-item aui-font-size-20">
+						<i class="aui-iconfont aui-icon-minus"></i>
+					</div>
+					<div class="aui-bar-btn-item">
+						<input type="number" class="aui-input aui-text-center" id="count" value="1">
+					</div>
+					<div class="aui-bar-btn-item aui-font-size-20">
+						<i class="aui-iconfont aui-icon-plus"></i>
+					</div>
+				</div>
+				<div class="aui-bar aui-bar-btn aui-bar-btn-round" style="width:45%;">
+					<div class="aui-bar-btn-item aui-active">Item</div>
+					<div class="aui-bar-btn-item">Item</div>
+				</div>
+				
+				
+				<div class="aui-tab" id="tab" onclick="tab()" >
+					<div class="aui-tab-item aui-active">Item1</div>
+					<div class="aui-tab-item"><div></div>Item2</div>
+					<div class="aui-tab-item">Item3</div>
+					<div class="aui-tab-item">Item4</div>
+				</div>
+				
+				
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">1</span>
+						</div>
+					<div class="aui-info-item">2015-07-13 22:31</div>
+				</div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">2</span>
+						</div>
+					<div class="aui-info-item">2015-07-13 22:31</div>
+				</div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">3</span>
+						</div>
+					<div class="aui-info-item">2015-07-13 22:31</div>
+				</div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">4</span>
+						</div>
+					<div class="aui-info-item">2015-07-13 22:31</div>
+				</div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">5</span>
+						</div>
+					<div class="aui-info-item">2015-07-13 22:31</div>
+				</div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">6</span>
+						</div>
+					<div class="aui-info-item">2015-07-13 22:31</div>
+				</div>
+			</div>
+			<footer class="aui-bar aui-bar-tab" id="footer">
+				<div class="aui-bar-tab-item aui-active" tapmode>
+					<i class="aui-iconfont aui-icon-home"></i>
+					<div class="aui-bar-tab-label">首页</div>
+				</div>
+				<div class="aui-bar-tab-item" tapmode>
+					<i class="aui-iconfont aui-icon-star"></i>
+					<div class="aui-bar-tab-label">收藏</div>
+				</div>
+				<div class="aui-bar-tab-item" tapmode>
+					<div class="aui-badge">99</div>
+					<i class="aui-iconfont aui-icon-cart"></i>
+					<div class="aui-bar-tab-label">购物车</div>
+				</div>
+				<div class="aui-bar-tab-item" tapmode>
+					<div class="aui-dot"></div>
+					<i class="aui-iconfont aui-icon-my"></i>
+					<div class="aui-bar-tab-label">我的</div>
+				</div>
+			</footer>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		function tab(){
+			alert(1);
+		}
+		var tab = new auiTab({
+			element:document.getElementById("footer"),
+			index:1,
+			repeatClick:false
+		},function(ret){
+			console.log(ret);
+		});
+		var tab2 = new auiTab({
+			element:document.getElementById("tab"),
+			index:1,
+			repeatClick:false
+		},function(ret){
+			console.log(ret);
+		});
+	</script>	
+</html>

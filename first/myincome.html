@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的收入</title>
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<link rel="stylesheet" type="text/css" href="../frame/css/aui.css" />
+		<script src="../frame/script/aui-tab.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.money{
+				width: 50%;
+				height: 5rem;
+				border: 1px solid;
+				float: left;
+			}
+			.active{
+				display: block;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="aui-content">
+			<div>
+				<div class="aui-tab aui-bg-info" id="tab" style="width: 50%;float: left;">
+					<div class="aui-tab-item aui-active aui-text-white">今日</div>
+					<div class="aui-tab-item aui-text-white"><div></div>当月</div>
+					<div class="aui-tab-item aui-text-white">累计</div>
+				</div>
+				<div style="height: 57px;" class="aui-bg-info">
+					<div  style="border-radius: 5px;">
+						<button style="color: #03a9f4;background-color: white; position: relative;left: 4rem;top: 0.5rem;border-radius: 50px;">提现</button>
+					</div>
+				</div>
+			</div>
+			<div class="money">
+				<div style="text-align: center;margin: 1rem auto;">
+					<p>累计收益金额(元)</p>
+					<p style="color: #03a9f4;margin: 1rem auto;">0.00</p>
+				</div>
+			</div>
+			<div class="money" >
+				<div style="text-align: center;margin: 1rem auto;">
+					<p>可提现金额(元)</p>
+					<p style="color: #03a9f4;margin: 1rem auto;">0.00</p>
+				</div>
+			</div>
+			<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10 " onclick="itemlist(this)" >
+				<div class="aui-info-item">
+					<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">直推收益</span>
+				</div>
+				<div class="aui-info-item">￥0.00
+					<div class="aui-col-xs-3">
+						<i class="aui-iconfont aui-icon-right"></i>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: #E9E8E4;display: none;">
+				<div class="aui-hr"></div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">礼包佣金</span>
+					</div>
+					<div class="aui-info-item">￥0.00
+						<div class="aui-col-xs-3">
+							<i class="aui-iconfont aui-icon-right"></i>
+						</div>
+					</div>
+				</div>
+				<div class="aui-hr"></div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">分润收入</span>
+					</div>
+					<div class="aui-info-item">￥0.00
+						<div class="aui-col-xs-3">
+							<i class="aui-iconfont aui-icon-right"></i>
+						</div>
+					</div>
+				</div>
+				<div class="aui-hr"></div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">返还现金</span>
+					</div>
+					<div class="aui-info-item">￥0.00
+						<div class="aui-col-xs-3">
+							<i class="aui-iconfont aui-icon-right"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="aui-hr"></div>
+			<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+				<div class="aui-info-item">
+					<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">间推收益</span>
+					</div>
+				<div class="aui-info-item">￥0.00
+					<div class="aui-col-xs-3">
+						<i class="aui-iconfont aui-icon-right"></i>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: #E9E8E4;display: none;">
+				<div class="aui-hr"></div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10" onclick="itemlist(this)">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">礼包佣金</span>
+					</div>
+					<div class="aui-info-item">￥0.00
+						<div class="aui-col-xs-3">
+							<i class="aui-iconfont aui-icon-right"></i>
+						</div>
+					</div>
+				</div>
+				<div class="aui-hr"></div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">分润收入</span>
+					</div>
+					<div class="aui-info-item">￥0.00
+						<div class="aui-col-xs-3">
+							<i class="aui-iconfont aui-icon-right"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aui-hr"></div>
+			<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+				<div class="aui-info-item">
+					<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">培养+分红</span>
+					</div>
+				<div class="aui-info-item">￥0.00
+					<div class="aui-col-xs-3">
+						<i class="aui-iconfont aui-icon-right"></i>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: #E9E8E4;display: none;">
+				<div class="aui-hr"></div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">礼包佣金</span>
+					</div>
+					<div class="aui-info-item">￥0.00
+						<div class="aui-col-xs-3">
+							<i class="aui-iconfont aui-icon-right"></i>
+						</div>
+					</div>
+				</div>
+				<div class="aui-hr"></div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">分润收入</span>
+					</div>
+					<div class="aui-info-item">￥0.00
+						<div class="aui-col-xs-3">
+							<i class="aui-iconfont aui-icon-right"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aui-hr"></div>
+			<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+				<div class="aui-info-item">
+					<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">待入金额</span>
+					</div>
+				<div class="aui-info-item">￥0.00
+					<div class="aui-col-xs-3">
+						<i class="aui-iconfont aui-icon-right"></i>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: #E9E8E4;display: none;">
+				<div class="aui-hr"></div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">礼包佣金</span>
+					</div>
+					<div class="aui-info-item">￥0.00
+						<div class="aui-col-xs-3">
+							<i class="aui-iconfont aui-icon-right"></i>
+						</div>
+					</div>
+				</div>
+				<div class="aui-hr"></div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">分润收入</span>
+					</div>
+					<div class="aui-info-item">￥0.00
+						<div class="aui-col-xs-3">
+							<i class="aui-iconfont aui-icon-right"></i>
+						</div>
+					</div>
+				</div>
+				<div class="aui-hr"></div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10" onclick="itemlist(this)">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">分润收入</span>
+					</div>
+					<div class="aui-info-item">￥0.00
+						<div class="aui-col-xs-3">
+							<i class="aui-iconfont aui-icon-right"></i>
+						</div>
+					</div>
+				</div>
+				<div class="aui-hr"></div>
+				<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10" onclick="itemlist(this)">
+					<div class="aui-info-item">
+						<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">分润收入</span>
+					</div>
+					<div class="aui-info-item">￥0.00
+						<div class="aui-col-xs-3">
+							<i class="aui-iconfont aui-icon-right"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aui-hr"></div>
+			<div style="width: 100%;height: 1rem;background-color: #E9E8E4;"></div>
+			<div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+				<div class="aui-info-item">
+					<img src="../../image/demo2.png" style="width:1.5rem" class="aui-img-round" /><span class="aui-margin-l-5">提现明细</span>
+					</div>
+				<div class="aui-info-item">
+					<div class="aui-col-xs-3">
+						<i class="aui-iconfont aui-icon-right"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var tab = new auiTab({
+			element:document.getElementById("tab"),
+			index:1,
+			repeatClick:false
+			},function(ret){
+				console.log(ret);
+		});
+		function itemlist(that){
+			//调用的时候 传参 this 
+			that.nextElementSibling.getAttribute("active");
+			
+		}
+	</script>
+</html>
